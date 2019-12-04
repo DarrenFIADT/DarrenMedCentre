@@ -1,9 +1,4 @@
 @extends('layouts.app')
-# @Date:   2019-11-11T19:04:44+00:00
-# @Last modified time: 2019-11-11T20:43:07+00:00
-
-
-
 
 @section('content')
 <div class="container">
@@ -19,7 +14,7 @@
                         </div>
                     @endif
 
-                    Medical Centre
+                    You are logged in as a patient!
                 </div>
             </div>
         </div>

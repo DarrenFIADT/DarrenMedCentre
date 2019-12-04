@@ -1,4 +1,9 @@
 <?php
+# @Date:   2019-11-11T18:56:38+00:00
+# @Last modified time: 2019-12-04T22:00:36+00:00
+
+
+
 
 use Illuminate\Support\Str;
 
@@ -56,7 +61,7 @@ return [
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
             'prefix_indexes' => true,
-            'strict' => true,
+            'strict' => false,
             'engine' => null,
             'options' => extension_loaded('pdo_mysql') ? array_filter([
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),

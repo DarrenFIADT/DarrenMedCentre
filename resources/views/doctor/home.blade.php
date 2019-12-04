@@ -1,6 +1,6 @@
 @extends('layouts.app')
-# @Date:   2019-11-11T19:04:44+00:00
-# @Last modified time: 2019-11-11T20:43:07+00:00
+# @Date:   2019-11-11T20:41:38+00:00
+# @Last modified time: 2019-11-11T21:07:47+00:00
 
 
 
@@ -19,7 +19,7 @@
                         </div>
                     @endif
 
-                    Medical Centre
+                    You are logged in as a doctor!
                 </div>
             </div>
         </div>
