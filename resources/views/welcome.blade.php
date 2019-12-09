@@ -13,10 +13,8 @@
                 <div class="card-header">Welcome</div>
 
                 <div class="card-body">
-                    Welcome to our Medical Centre <a href="{{ route('admin.doctors.index') }}"> Doctors</a>
-                    <br>
-                    <a href="{{ route('admin.patients.index') }}"> patients</a>
-                    <br>
+                    Welcome to our Medical Centre
+                    Login to book an appointment
                     Learn more <a href="{{ route('about') }}">about us</a>
 
                 </div>

@@ -1,6 +1,6 @@
 <?php
 # @Date:   2019-12-03T14:22:35+00:00
-# @Last modified time: 2019-12-04T21:52:57+00:00
+# @Last modified time: 2019-12-09T17:59:14+00:00
 
 
 
@@ -25,7 +25,6 @@ class CreatePatientsTable extends Migration
             $table->string('phone');
             $table->string('email')->unique();
             $table->boolean('insurance');
-            $table->string('insurance_name');
             $table->string('policy_number')->unique();#
 
             $table->timestamps();

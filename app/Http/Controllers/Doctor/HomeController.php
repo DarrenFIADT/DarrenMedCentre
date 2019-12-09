@@ -1,28 +1,28 @@
 <?php
-# @Date:   2019-11-11T17:23:22+00:00
-# @Last modified time: 2019-11-11T21:01:16+00:00
+# @Date:   2019-11-11T20:45:37+00:00
+# @Last modified time: 2019-12-09T22:54:34+00:00
 
 
 
 
 namespace App\Http\Controllers\Doctor;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use App\Role;
+use App\User;
+use App\Doctor;
 class HomeController extends Controller
 {
+
   public function __construct()
   {
-      $this->middleware('auth');
-      $this->middleware('role:doctors');
-
+        $this->middleware('auth');
+        $this->middleware('role:doctor');
   }
 
 
-
-
-    public function index(){
-      return view('doctors.home');
-    }
+  public function index()
+  {
+    return view('doctor.home');
+  }
 }

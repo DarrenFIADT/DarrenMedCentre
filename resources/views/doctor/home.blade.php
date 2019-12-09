@@ -1,6 +1,6 @@
 @extends('layouts.app')
 # @Date:   2019-11-11T20:41:38+00:00
-# @Last modified time: 2019-11-11T21:07:47+00:00
+# @Last modified time: 2019-12-09T17:20:02+00:00
 
 
 
@@ -18,8 +18,17 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                  Welcome Doctor:
+                  {{ Auth::user()->name    }}
+                   </br>
+                   Email:    {{ Auth::user()->email   }}
 
-                    You are logged in as a doctor!
+
+</br>
+
+                 Check Appointments <a href="{{route('doctor.visits.index')}}">here</a>
+               </br>
+
                 </div>
             </div>
         </div>

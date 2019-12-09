@@ -1,6 +1,6 @@
 <?php
 # @Date:   2019-12-03T14:41:47+00:00
-# @Last modified time: 2019-12-04T22:14:23+00:00
+# @Last modified time: 2019-12-09T17:55:39+00:00
 
 
 
@@ -55,7 +55,6 @@ class PatientController extends Controller
             'phone' => 'required',
             'email' => 'required',
             'insurance' => 'required',
-            'insurance_name' => 'required',
             'policy_number' => 'required'
 
 
@@ -67,7 +66,6 @@ class PatientController extends Controller
                $patient->phone = $request->input('phone');
                $patient->email = $request->input('email');
                $patient->insurance = $request->input('insurance');
-               $patient->insurance_name = $request->input('insurance_name');
                $patient->policy_number = $request->input('policy_number');
 
                $patient->save();
@@ -122,7 +120,6 @@ class PatientController extends Controller
             'phone' => 'required',
             'email' => 'required',
             'insurance' => 'required',
-            'insurance_name' => 'required',
             'policy_number' => 'required'
 
 
@@ -133,7 +130,6 @@ class PatientController extends Controller
                $patient->phone = $request->input('phone');
                $patient->email = $request->input('email');
                $patient->insurance = $request->input('insurance');
-               $patient->insurance_name = $request->input('insurance_name');
                $patient->policy_number = $request->input('policy_number');
 
                $patient->save();

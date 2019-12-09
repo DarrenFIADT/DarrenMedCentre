@@ -1,4 +1,9 @@
 <?php
+# @Date:   2019-11-11T19:04:44+00:00
+# @Last modified time: 2019-12-09T22:52:31+00:00
+
+
+
 
 namespace App\Http\Controllers;
 use App\Role;
@@ -29,7 +34,7 @@ class HomeController extends Controller
       if ($user->hasRole('admin')) {
       $home = 'admin.home';
       }
-      else if ($user->hasRole('doctors')) {
+      else if ($user->hasRole('doctor')) {
         $home = 'doctor.home';
       }
       else if ($user->hasRole('patient')) {

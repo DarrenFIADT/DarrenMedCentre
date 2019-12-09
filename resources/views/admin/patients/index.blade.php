@@ -1,6 +1,9 @@
-# @Date:   2019-12-03T22:32:01+00:00
-# @Last modified time: 2019-12-04T20:14:47+00:00
 @extends('layouts.app')
+# @Date:   2019-12-04T19:12:53+00:00
+# @Last modified time: 2019-12-09T18:07:57+00:00
+
+
+
 
 @section('content')
 
@@ -14,29 +17,27 @@
         </div>
        <div class="card-body">
          @if (count($patients) === 0)
-         <p>There are no patients ! </p>
+         <p>There are no Patients ! </p>
          @else
-          <table id="table-patients" class="table table-hover">
+          <table id="table-patients table-users" class="table table-hover">
             <thead>
-              <th>Name</th>
+              <th>Name </th>
+              <th>Email </th>
               <th>Address</th>
-              <th>Phone</th>
-              <th>Email</th>
-              <th>has insurance</th>
-              <th>insurance name</th>
-              <th> policy number</th>
+              <th>Phone Number</th>
+              <th>Insurance Company</th>
+              <th>Policy Number</th>
+              <th>Actions</th>
             </thead>
             <tbody>
               @foreach ($patients as $patient)
-              <tr data-id="{{$patient->id}}">
-              <td>{{  $patient->name  }}</td>
+              <tr data=id="{{$patient->id}}">
+              <td>{{  $patient->name }}</td>
+              <td>{{  $patient->email  }}</td>
               <td>{{  $patient->address  }}</td>
               <td>{{  $patient->phone  }}</td>
-              <td>{{  $patient->email  }}</td>
               <td>{{  $patient->insurance  }}</td>
-              <td>{{  $patient->insurance_name  }}</td>
               <td>{{  $patient->policy_number  }}</td>
-
               <td>
                 <a href="{{route ('admin.patients.show', $patient->id) }}" class="btn btn-default">View</a>
                 <a href="{{route ('admin.patients.edit', $patient->id) }}" class="btn btn-warning">Edit</a>
