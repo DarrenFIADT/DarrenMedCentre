@@ -1,4 +1,9 @@
 @extends('layouts.app')
+# @Date:   2019-12-09T17:06:38+00:00
+# @Last modified time: 2019-12-10T13:13:52+00:00
+
+
+
 
 @section('content')
 
@@ -15,7 +20,7 @@
                 @foreach ($visits as $visit)
               <tr>
                 <td>Title</td>
-                  <td>{{ $visit->Doctor->user->name }}</td>
+                  <td>{{ $visit->name }}</td>
               </tr>
               <tr>
                 <td>Description</td>
@@ -23,7 +28,7 @@
               </tr>
               <tr>
                 <td>Patient</td>
-                  <td>{{ $visit->Patient->user->name }}</td>
+                  <td>{{ $visit->name }}</td>
               </tr>
               <tr>
                 <td>Time</td>

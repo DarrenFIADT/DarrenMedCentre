@@ -23,7 +23,7 @@ class CreateDoctorsTable extends Migration
             $table->bigInteger('id');
             $table->string('name');
             $table->string('address');
-            $table->string('phone');
+            $table->int('phone');
             $table->string('email')->unique();
             $table->date('created');
 

@@ -1,6 +1,6 @@
 <?php
 # @Date:   2019-11-11T18:56:38+00:00
-# @Last modified time: 2019-11-11T20:27:11+00:00
+# @Last modified time: 2019-12-10T15:57:33+00:00
 
 
 
@@ -9,6 +9,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\User;
+use App\Role;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -76,6 +77,6 @@ class RegisterController extends Controller
 
       $user->roles()->attach(Role::where('name','user ')->first());
 
-      return $user; 
+      return $user;
     }
 }

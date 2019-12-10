@@ -22,7 +22,7 @@ class CreatePatientsTable extends Migration
             $table->bigInteger('id');
             $table->string('name');
             $table->string('address');
-            $table->string('phone');
+            $table->int('phone');
             $table->string('email')->unique();
             $table->boolean('insurance');
             $table->string('policy_number')->unique();#

@@ -1,6 +1,6 @@
 <?php
 # @Date:   2019-11-11T18:56:38+00:00
-# @Last modified time: 2019-12-09T22:48:31+00:00
+# @Last modified time: 2019-12-10T16:01:56+00:00
 
 
 
@@ -22,6 +22,8 @@ Route::get('about', 'PageController@about')->name('about');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('user/home', 'HomeController@index')->name('user.home');
+
 Route::get('/admin/home', 'Admin\HomeController@index')->name('admin.home');
 
 Route::get('/doctor/home', 'Doctor\HomeController@index')->name('doctor.home');
